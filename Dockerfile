@@ -11,4 +11,8 @@ RUN pip install -r requirements.txt
 
 COPY entrypoint.sh /entrypoint.sh
 COPY check_pip_licenses /check_pip_licenses
+
+RUN --mount=type=ssh mkdir -p -m 0600 ~/.ssh && \
+    ssh-keyscan github.com >> ~/.ssh/known_hosts
+
 ENTRYPOINT ["/entrypoint.sh"]
