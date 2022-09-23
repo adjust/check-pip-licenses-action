@@ -6,4 +6,5 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 COPY entrypoint.sh /entrypoint.sh
+COPY check_pip_licenses /check_pip_licenses
 ENTRYPOINT ["/entrypoint.sh"]
