@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+
+import sys
+
+from piplicenses import main
+
+IGNORE_PACKAGES = [
+  'aiofiles',
+  'facebook-business',
+  'GPy',
+  'GPyOpt',
+  'numexpr',
+  'types-orjson',
+]
+
+ALLOWED_LICENSES = [
+    '3-Clause BSD License',
+    'Apache 2',
+    'Apache 2.0',
+    'Apache License 2.0',
+    'Apache Software License',
+    'Apache Software License, BSD License',
+    'Apache Software License, MIT License',
+    'Apache-2.0 OR MIT',
+    'BSD 3-Clause',
+    'BSD License, Apache Software License',
+    'BSD License',
+    'BSD-3-Clause',
+    'BSD',
+    'CC0 1.0 Universal (CC0 1.0) Public Domain Dedication',
+    'Eclipse Public License v2.0',
+    'GNU General Public License (GPL)',
+    'GNU General Public License v2 (GPLv2)',
+    'GNU General Public License v2 or later (GPLv2+)',
+    'GNU General Public License v3 (GPLv3)',
+    'GNU Lesser General Public License v2 (LGPLv2)',
+    'GNU Lesser General Public License v3 or later (LGPLv3+)',
+    'GNU Library or Lesser General Public License (LGPL)',
+    'Historical Permission Notice and Disclaimer (HPND)',
+    'ISC License (ISCL)',
+    'ISC',
+    'MIT License',
+    'MIT License, Apache Software License',
+    'MIT',
+    'Mozilla Public License 2.0 (MPL 2.0)',
+    'Public Domain',
+    'Python Software Foundation License',
+    'new BSD',
+]
+
+
+def check() -> None:
+    licenses = ';'.join(ALLOWED_LICENSES)
+    sys.argv.append(f'--allow-only={licenses}')
+    sys.argv.extend(['--ignore-packages', *IGNORE_PACKAGES])
+
+    sys.exit(main())
+
+
+if __name__ == '__main__':
+    check()
