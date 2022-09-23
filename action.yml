@@ -1,10 +1,11 @@
+---
 name: 'Check PIP licences'
 description: 'Check for allowed licenses on pip packages.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  requirements-file:
+  requirements_file:
     description: "Requirements file path"
     required: false
     default: 'requirements.txt'
