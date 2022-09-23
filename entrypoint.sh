@@ -1,4 +1,7 @@
 #!/bin/bash
 
-pip install -r ${REQUIREMENTS_FILE}
-./check_requirements
+echo $1
+cat $1
+
+#pip install -r $1
+#./check_pip_licenses
