@@ -3,8 +3,8 @@ description: 'Check for allowed licenses on pip packages.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  inputs:
-    requirements-file:
-      description: "Requirements file path"
-      required: false
-      default: 'requirements.txt'
+inputs:
+  requirements-file:
+    description: "Requirements file path"
+    required: false
+    default: 'requirements.txt'
