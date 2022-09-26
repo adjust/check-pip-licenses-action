@@ -5,7 +5,9 @@ runs:
   using: 'composite'
   steps:
     - run: pip install pip-licenses==3.5.4
+      shell: bash
     - run: ./check_pip_licenses
+      shell: python
 inputs:
   requirements_file:
     description: "Requirements file path"
