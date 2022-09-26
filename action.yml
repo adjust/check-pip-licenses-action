@@ -10,8 +10,3 @@ runs:
       shell: bash
     - run: check_pip_licenses
       shell: bash
-inputs:
-  requirements_file:
-    description: "Requirements file path"
-    required: false
-    default: 'requirements.txt'
