@@ -6,7 +6,9 @@ runs:
   steps:
     - run: pip install pip-licenses==3.5.4
       shell: bash
-    - run: "./check_pip_licenses"
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
+    - run: check_pip_licenses
       shell: python
 inputs:
   requirements_file:
