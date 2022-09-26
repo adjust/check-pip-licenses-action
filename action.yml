@@ -4,12 +4,10 @@ description: 'Check for allowed licenses on pip packages.'
 runs:
   using: 'composite'
   steps:
-    - run: check_pip_licenses
-      shell: bash
+    - run: pip install pip-licenses==3.5.4
+    - run: ./check_pip_licenses
 inputs:
   requirements_file:
     description: "Requirements file path"
     required: false
     default: 'requirements.txt'
-
-
