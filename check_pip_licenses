@@ -46,6 +46,7 @@ ALLOWED_LICENSES = [
     'Public Domain',
     'Python Software Foundation License',
     'new BSD',
+    'Zope Public License',
 ]
 
 
