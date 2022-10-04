@@ -6,7 +6,6 @@ from piplicenses import main
 
 IGNORE_PACKAGES = [
   'aiofiles',
-  'flake8-logging-format'
   'facebook-business',
   'GPy',
   'GPyOpt',
@@ -47,6 +46,7 @@ ALLOWED_LICENSES = [
     'Public Domain',
     'Python Software Foundation License',
     'new BSD',
+    'Zope Public License',
 ]
 
 
