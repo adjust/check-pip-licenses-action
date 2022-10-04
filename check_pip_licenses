@@ -6,6 +6,7 @@ from piplicenses import main
 
 IGNORE_PACKAGES = [
   'aiofiles',
+  'flake8-logging-format'
   'facebook-business',
   'GPy',
   'GPyOpt',
