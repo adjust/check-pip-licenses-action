@@ -5,7 +5,10 @@ import sys
 from piplicenses import main
 
 IGNORE_PACKAGES = [
+  'aiopath',
   'aiofiles',
+  'ansible',
+  'ansible-core',
   'facebook-business',
   'GPy',
   'GPyOpt',
@@ -17,6 +20,8 @@ ALLOWED_LICENSES = [
     '3-Clause BSD License',
     'Apache 2',
     'Apache 2.0',
+    'Apache License',
+    'Apache License, Version 2.0',
     'Apache License 2.0',
     'Apache Software License',
     'Apache Software License, BSD License',
@@ -33,6 +38,7 @@ ALLOWED_LICENSES = [
     'GNU General Public License v2 (GPLv2)',
     'GNU General Public License v2 or later (GPLv2+)',
     'GNU General Public License v3 (GPLv3)',
+    'GNU General Public License v3 or later (GPLv3+)',
     'GNU Lesser General Public License v2 (LGPLv2)',
     'GNU Lesser General Public License v3 or later (LGPLv3+)',
     'GNU Library or Lesser General Public License (LGPL)',
