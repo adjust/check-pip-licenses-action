@@ -51,6 +51,7 @@ ALLOWED_LICENSES = [
     'Mozilla Public License 2.0 (MPL 2.0)',
     'Public Domain',
     'Python Software Foundation License',
+    'The Unlicense (Unlicense)',
     'new BSD',
     'Zope Public License',
 ]
