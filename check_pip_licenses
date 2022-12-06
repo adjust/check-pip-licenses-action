@@ -49,9 +49,10 @@ ALLOWED_LICENSES = [
     'MIT License, Apache Software License',
     'MIT',
     'Mozilla Public License 2.0 (MPL 2.0)',
+    'new BSD',
     'Public Domain',
     'Python Software Foundation License',
-    'new BSD',
+    'The Unlicense (Unlicense)',
     'Zope Public License',
 ]
 
