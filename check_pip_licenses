@@ -4,7 +4,17 @@ import sys
 
 from piplicenses import main
 
-IGNORE_PACKAGES = [
+INTERNAL_PACKAGES = [
+  'cc-tools',
+  'cc-tools-db',
+  'cc-tools-kafka',
+  'cc-tools-monitoring',
+  'cc-tools-redis',
+  'cc-tools-web',
+]
+
+IGNORED_PACKAGES = [
+  *INTERNAL_PACKAGES,
   'aiopath',
   'aiofiles',
   'ansible',
@@ -60,7 +70,7 @@ ALLOWED_LICENSES = [
 def check() -> None:
     licenses = ';'.join(ALLOWED_LICENSES)
     sys.argv.append(f'--allow-only={licenses}')
-    sys.argv.extend(['--ignore-packages', *IGNORE_PACKAGES])
+    sys.argv.extend(['--ignore-packages', *IGNORED_PACKAGES])
 
     sys.exit(main())
 
