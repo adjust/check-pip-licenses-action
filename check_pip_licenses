@@ -23,6 +23,7 @@ IGNORED_PACKAGES = [
   'GPy',
   'GPyOpt',
   'numexpr',
+  'pathable',
   'types-orjson',
 ]
 
