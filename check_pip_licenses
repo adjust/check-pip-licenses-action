@@ -15,16 +15,16 @@ INTERNAL_PACKAGES = [
 
 IGNORED_PACKAGES = [
   *INTERNAL_PACKAGES,
-  'aiopath',
-  'aiofiles',
-  'ansible',
-  'ansible-core',
-  'facebook-business',
-  'GPy',
-  'GPyOpt',
-  'numexpr',
-  'pathable',
-  'types-orjson',
+  'aiopath',  # GNU: https://github.com/alexdelorenzo/aiopath/blob/support-3.11/LICENSE
+  'aiofiles',  # Apache 2.0: https://github.com/Tinche/aiofiles/blob/main/LICENSE
+  'ansible',  # https://github.com/ansible/ansible/tree/devel/licenses
+  'ansible-core',  # https://github.com/ansible/ansible-core/tree/devel/licenses
+  'facebook-business',  # https://github.com/facebook/facebook-python-business-sdk/blob/main/LICENSE.txt
+  'GPy',  # BSD-3: https://github.com/SheffieldML/GPy/blob/devel/LICENSE.txt
+  'GPyOpt',  # BSD-3: https://github.com/SheffieldML/GPyOpt/blob/master/LICENSE.txt
+  'numexpr',  # MIT: https://github.com/pydata/numexpr/blob/master/LICENSE.txt
+  'pathable',  # Apache 2.0: https://github.com/p1c2u/pathable/blob/master/LICENSE
+  'types-orjson',  # Apache 2.0: https://github.com/python/typeshed/blob/main/LICENSE
 ]
 
 ALLOWED_LICENSES = [
