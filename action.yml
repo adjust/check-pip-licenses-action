@@ -4,7 +4,7 @@ description: 'Check for allowed licenses on pip packages.'
 runs:
   using: 'composite'
   steps:
-    - run: pip install pip-licenses==3.5.4
+    - run: pip install pip-licenses==4.2.0
       shell: bash
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
