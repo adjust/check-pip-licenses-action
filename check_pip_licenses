@@ -51,8 +51,8 @@ ALLOWED_LICENSES = [
     'GNU General Public License v3 (GPLv3)',
     'GNU General Public License v3 or later (GPLv3+)',
     'GNU Lesser General Public License v2 (LGPLv2)',
-    'GNU Lesser General Public License v2 or later (LGPLv2+),'
-    'GNU Lesser General Public License v3 or later (LGPLv3+)'
+    'GNU Lesser General Public License v2 or later (LGPLv2+)',
+    'GNU Lesser General Public License v3 or later (LGPLv3+)',
     'GNU Library or Lesser General Public License (LGPL)',
     'GPL-3.0-or-later',
     'Historical Permission Notice and Disclaimer (HPND)',
