@@ -24,6 +24,7 @@ IGNORED_PACKAGES = [
   'GPyOpt',  # BSD-3: https://github.com/SheffieldML/GPyOpt/blob/master/LICENSE.txt
   'numexpr',  # MIT: https://github.com/pydata/numexpr/blob/master/LICENSE.txt
   'pathable',  # Apache 2.0: https://github.com/p1c2u/pathable/blob/master/LICENSE
+  'stdlib-list',  # MIT: https://github.com/pypi/stdlib-list/blob/main/LICENSE
   'types-orjson',  # Apache 2.0: https://github.com/python/typeshed/blob/main/LICENSE
 ]
 
